@@ -1,5 +1,8 @@
 <h1>show todo <%= @todo.id%></h1>
 <p> name: <%=@todo.name %>
 </p>
-<p>description: <%=@todo.description %>
+<p>description: <%=@todo.description %> </p>
+<p>
+<%= link_to "edit", edit_todo_path(@todo) %>|
+<%= link_to "Back to todos Listing", todos_path %>
 </p>
